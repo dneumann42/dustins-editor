@@ -7,5 +7,5 @@ return function()
 
   K.map("n", "<leader>i", ":IconPickerNormal<cr>")
   K.map("n", "<leader>I", ":IconPickerYank<cr>")
-  K.map("i", "<c-s>i", ":IconPickerYank<cr>")
+  K.map("i", "<C-A-i>", "<ESC>:IconPickerYank<cr>")
 end

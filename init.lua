@@ -6,8 +6,9 @@ require("plugins")
   .bootstrap()
   .setup {}
 
+require("keybindings").setup()
+require("config").setup()
+
 require("configs/configs")()
 
-require("config").setup {}
-require("keybindings").setup {}
-require("theme").setup {}
+require("theme").setup()
