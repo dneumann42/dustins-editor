@@ -1,0 +1,13 @@
+return function()
+  require("configs/basic")()
+  require("configs/telescope")()
+  require("configs/floaterm")()
+  require("configs/treesitter")()
+  require("configs/nvim-tree")()
+  require("configs/lualine")()
+  require("configs/marks")()
+  require("configs/icon-picker")()
+  require("configs/dashboard")()
+  require("configs/neogit")()
+  require("configs/lsp")()
+end
