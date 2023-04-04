@@ -5,7 +5,6 @@ local M = {
 }
 
 function M.setup()
-  local g = vim.g -- globals
   local opt = vim.opt -- options
 
   opt.mouse = 'a'
@@ -25,7 +24,7 @@ function M.setup()
   opt.smartcase = true
   opt.linebreak = true
   opt.termguicolors = true
-  opt.laststatus=3
+  opt.laststatus = 3
 
   opt.expandtab = true
   opt.shiftwidth = 2
