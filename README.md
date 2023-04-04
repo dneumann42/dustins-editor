@@ -1,1 +1,1 @@
-# neovim-config
+# Dustin's own editor config
