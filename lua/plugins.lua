@@ -20,75 +20,81 @@ function M.setup(opts)
   opts = opts or nil
 
   require("lazy").setup {
-      "folke/which-key.nvim",
-      "nvim-lua/plenary.nvim",
-      "nvim-telescope/telescope.nvim",
-      "ahmedkhalf/project.nvim",
-      "sudormrfbin/cheatsheet.nvim",
-      "rebelot/kanagawa.nvim",
-      "xiyaowong/transparent.nvim",
+    "folke/which-key.nvim",
+    "nvim-lua/plenary.nvim",
+    "nvim-telescope/telescope.nvim",
+    "ahmedkhalf/project.nvim",
+    "sudormrfbin/cheatsheet.nvim",
+    "rebelot/kanagawa.nvim",
+    "xiyaowong/transparent.nvim",
 
-      -- https://github.com/stevearc/dressing.nvim#configuration
-      "stevearc/dressing.nvim",
-      "ziontee113/icon-picker.nvim",
+    -- https://github.com/stevearc/dressing.nvim#configuration
+    "stevearc/dressing.nvim",
+    "ziontee113/icon-picker.nvim",
 
-      -- File tree
-      "nvim-tree/nvim-web-devicons",
-      "nvim-tree/nvim-tree.lua",
+    -- File tree
+    "nvim-tree/nvim-web-devicons",
+    "nvim-tree/nvim-tree.lua",
 
-      -- line
-      "nvim-lualine/lualine.nvim",
+    -- line
+    "nvim-lualine/lualine.nvim",
 
-      -- Terminal
-      "voldikss/vim-floaterm",
+    -- Terminal
+    "voldikss/vim-floaterm",
 
-      -- Tree-sitter
-      "nvim-treesitter/nvim-treesitter",
-      "kylechui/nvim-surround",
+    -- Tree-sitter
+    "nvim-treesitter/nvim-treesitter",
+    "kylechui/nvim-surround",
 
-      -- marks
-      "chentoast/marks.nvim",
+    -- marks
+    "chentoast/marks.nvim",
 
-      -- start page
-      {
-          "glepnir/dashboard-nvim",
-          event = 'VimEnter',
-          dependencies = { "nvim-tree/nvim-web-devicons" },
+    -- start page
+    {
+      "glepnir/dashboard-nvim",
+      event = 'VimEnter',
+      dependencies = { "nvim-tree/nvim-web-devicons" },
+    },
+
+    -- neogit
+    "TimUntersberger/neogit",
+
+    -- "neovim/nvim-lspconfig",
+    -- "williamboman/nvim-lsp-installer", -- Automatically install LSPs
+    -- "hrsh7th/cmp-nvim-lsp",
+    "williamboman/mason.nvim",
+
+    "hrsh7th/nvim-cmp",   -- auto complete
+    'hrsh7th/cmp-path',
+    'hrsh7th/cmp-cmdline',
+
+    "jose-elias-alvarez/null-ls.nvim",   -- Null ls is used for code formatting and pylint analysis
+    {
+      "jay-babu/mason-null-ls.nvim",
+      event = { "BufReadPre", "BufNewFile" },
+      dependencies = {
+        "williamboman/mason.nvim",
+        "jose-elias-alvarez/null-ls.nvim",
       },
+    },
+    'williamboman/mason-lspconfig.nvim',
+    'neovim/nvim-lspconfig',
 
-      -- neogit
-      "TimUntersberger/neogit",
+    -- Language Specific
+    'simrat39/rust-tools.nvim',
 
-      -- "neovim/nvim-lspconfig",
-      -- "williamboman/nvim-lsp-installer", -- Automatically install LSPs
-      -- "hrsh7th/cmp-nvim-lsp",
-      "williamboman/mason.nvim",
-      "hrsh7th/nvim-cmp", -- auto complete
-      "jose-elias-alvarez/null-ls.nvim", -- Null ls is used for code formatting and pylint analysis
-      {
-          "jay-babu/mason-null-ls.nvim",
-          event = { "BufReadPre", "BufNewFile" },
-          dependencies = {
-            "williamboman/mason.nvim",
-            "jose-elias-alvarez/null-ls.nvim",
-          },
-      },
-      'williamboman/mason-lspconfig.nvim',
-      'neovim/nvim-lspconfig',
+    -- for help messages and such
+    "rcarriga/nvim-notify",
 
-      -- Language Specific
- 
-      'simrat39/rust-tools.nvim',
+    -- Some packages i've been looking into
 
-      -- Some packages i've been looking into
-
-      -- https://github.com/j-morano/buffer_manager.nvim
-      -- https://github.com/axieax/urlview.nvim
-      -- https://github.com/code-biscuits/nvim-biscuits
-      -- https://github.com/kevinhwang91/nvim-ufo
-      -- https://github.com/nguyenvukhang/nvim-toggler
-      -- https://github.com/David-Kunz/jester
-      -- https://github.com/rcarriga/nvim-notify
+    -- https://github.com/j-morano/buffer_manager.nvim
+    -- https://github.com/axieax/urlview.nvim
+    -- https://github.com/code-biscuits/nvim-biscuits
+    -- https://github.com/kevinhwang91/nvim-ufo
+    -- https://github.com/nguyenvukhang/nvim-toggler
+    -- https://github.com/David-Kunz/jester
+    -- https://github.com/rcarriga/nvim-notify
   }
   return M
 end

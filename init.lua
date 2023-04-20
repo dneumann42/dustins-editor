@@ -8,7 +8,5 @@ require("plugins")
 
 require("keybindings").setup()
 require("config").setup()
-
 require("configs/configs")()
-
 require("theme").setup()
