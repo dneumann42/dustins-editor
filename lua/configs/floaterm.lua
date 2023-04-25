@@ -11,7 +11,7 @@ return function()
   cmd('tnoremap <silent> \\[ <C-\\><C-n>:FloatermNext<cr>')
   cmd('tnoremap <silent> \\] <C-\\><C-n>:FloatermPrev<cr>')
 
-  cmd('nnoremap <silent> <SPACE><SPACE> :FloatermToggle<cr> <C-\\><C-n>:FloatermUpdate --position=topright --width=60<cr>')
+  cmd('nnoremap <silent> <SPACE><SPACE> :FloatermToggle<cr> <C-\\><C-n>:FloatermUpdate --position=topright --width=70<cr>')
   cmd('nnoremap <silent> <F5> <C-\\><C-n>:FloatermNew --autoclose=0 love .<cr>')
   cmd('tnoremap <silent> <SPACE>tr <C-\\><C-n>:FloatermUpdate --position=topright --width=50<cr>')
   cmd('tnoremap <silent> <SPACE>tl <C-\\><C-n>:FloatermUpdate --position=topleft --width=60<cr>')

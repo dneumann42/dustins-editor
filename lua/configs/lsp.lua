@@ -27,7 +27,7 @@ return function()
     hover = 'K',
     implementation = 'gi',
     -- signature_help = '<c-k>',
-    type_definition = 'D',
+    type_definition = 'T',
     rename = '<space>rn',
     code_action = '<c-K>',
     references = 'gr',
