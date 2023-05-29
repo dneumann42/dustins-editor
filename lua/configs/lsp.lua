@@ -1,3 +1,16 @@
+
+local function handling_autocomplete()
+  -- Smart tab code
+  -- https://github.com/hrsh7th/nvim-compe/issues/141#issuecomment-774304229
+
+  local cmp = require("cmp")
+  cmp.setup {
+    mapping = cmp.mapping.preset.insert {
+      ['<C-Space>'] = cmp.mapping.complete(),
+    }
+  }
+end
+
 return function()
   local null_ls = require("null-ls")
 
@@ -13,9 +26,6 @@ return function()
   require("mason-lspconfig").setup {
     ensure_installed = { "lua_ls", "rust_analyzer" }
   }
-
-  local cmp = require("cmp")
-  cmp.setup {}
 
   -- Mappings.
   -- See `:help vim.lsp.*` for documentation on any of the below functions
@@ -78,4 +88,6 @@ Lsp keybinding cheatsheet
   local lsp = require("lspconfig")
   lsp.lua_ls.setup {}
   lsp.rust_analyzer.setup {}
+
+  handling_autocomplete()
 end

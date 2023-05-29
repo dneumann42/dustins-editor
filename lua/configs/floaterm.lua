@@ -13,9 +13,4 @@ return function()
 
   cmd('nnoremap <silent> <SPACE><SPACE> :FloatermToggle<cr> <C-\\><C-n>:FloatermUpdate --position=topright --width=70<cr>')
   cmd('nnoremap <silent> <F5> <C-\\><C-n>:FloatermNew --autoclose=0 love .<cr>')
-  cmd('tnoremap <silent> <SPACE>tr <C-\\><C-n>:FloatermUpdate --position=topright --width=50<cr>')
-  cmd('tnoremap <silent> <SPACE>tl <C-\\><C-n>:FloatermUpdate --position=topleft --width=60<cr>')
-  cmd('tnoremap <silent> <SPACE>br <C-\\><C-n>:FloatermUpdate --position=bottomright --width=50<cr>')
-  cmd('tnoremap <silent> <SPACE>bl <C-\\><C-n>:FloatermUpdate --position=bottomleft --width=60<cr>')
-  cmd('tnoremap <silent> <SPACE>c <C-\\><C-n>:FloatermUpdate --position=center --width=60<cr>')
 end
