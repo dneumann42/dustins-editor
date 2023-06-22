@@ -7,6 +7,8 @@ local M = {
 function M.setup()
   local opt = vim.opt -- options
 
+  vim.cmd "set nowrap"
+
   opt.mouse = 'a'
   opt.clipboard = 'unnamedplus'
   opt.swapfile = false
@@ -38,6 +40,8 @@ function M.setup()
 
   opt.shortmess:append "sI"
 
+  vim.o.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+
   -- Highlight on yank
   vim.cmd [[
     augroup YankHighlight
@@ -45,6 +49,8 @@ function M.setup()
       autocmd TextYankPost * silent! lua vim.highlight.on_yank()
     augroup end
   ]]
+
+  require("neovide")()
 end
 
 return M

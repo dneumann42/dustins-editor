@@ -36,6 +36,9 @@ function M.setup(opts)
     "nvim-tree/nvim-web-devicons",
     "nvim-tree/nvim-tree.lua",
 
+    'rmagatti/session-lens',
+    'rmagatti/auto-session',
+
     -- line
     "nvim-lualine/lualine.nvim",
 
@@ -82,9 +85,11 @@ function M.setup(opts)
 
     -- Language Specific
     'simrat39/rust-tools.nvim',
+    "ericvw/vim-nim",
 
     -- for help messages and such
     "rcarriga/nvim-notify",
+    "ahmedkhalf/project.nvim"
 
     -- Some packages i've been looking into
 

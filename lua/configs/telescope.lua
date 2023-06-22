@@ -7,5 +7,7 @@ return function()
   K.map('n', '<leader>b', ':Telescope buffers<cr>')
   K.map('n', '<leader>p', ':Telescope projects<cr>')
 
-  require("telescope").load_extension('projects')
+  local tele = require("telescope")
+  tele.load_extension('projects')
+  tele.load_extension('session-lens')
 end

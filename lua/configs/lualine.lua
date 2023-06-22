@@ -5,7 +5,8 @@ return function()
       globalstatus = true,
     },
     sections = {
-      lualine_x = { "import" }
+      lualine_x = { "import" },
+      lualine_c = { require('auto-session.lib').current_session_name }
     }
   }
 end

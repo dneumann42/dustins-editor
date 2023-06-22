@@ -1,0 +1,1 @@
+syntax keyword nimKeyword variant
